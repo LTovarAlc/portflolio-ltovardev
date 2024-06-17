@@ -17,3 +17,7 @@ img, video, svg { height: auto; max-width: 100%;}
     transition: none;
   }
 }
+
+html{
+	scroll-behavior: smooth;
+}
