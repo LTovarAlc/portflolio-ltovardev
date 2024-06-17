@@ -1,7 +1,10 @@
 import './App.css'
+import Portfolio from './portfolio/portfolio';
 
 function App() {
-  return 
+  return (
+    <Portfolio/>
+  )
 }
 
 export default App;
