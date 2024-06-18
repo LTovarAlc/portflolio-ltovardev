@@ -11,7 +11,7 @@ const Introduce = () => {
         className="profilePic"
       />
       <h1 className="introduce-title">Front-End Developer</h1>
-      <a href="#aboutMe"><button class="button">About me</button></a>
+      <a href="#aboutMe"><button className="button">About me</button></a>
     </section>
   );
 };

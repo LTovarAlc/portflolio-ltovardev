@@ -10,9 +10,9 @@ const Header = () => {
             <a href="#projects"><li className="menu-list__item-link">Projects</li></a>
             <a href="#skills"><li className="menu-list__item-link">Skills</li></a>
             <a href=""><li className="menu-list__item-link">Contact</li></a>
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox"/>
-                <span class="slider"></span>
+                <span className="slider"></span>
             </label>
             </ul>
         </header>
