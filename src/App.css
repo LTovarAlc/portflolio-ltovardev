@@ -21,3 +21,11 @@ img, video, svg { height: auto; max-width: 100%;}
 html{
 	scroll-behavior: smooth;
 }
+
+.section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 0px;
+}

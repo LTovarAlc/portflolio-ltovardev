@@ -1,0 +1,53 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe-content{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe-text{ 
+    width: 40%;
+}
+
+.aboutMe-text h3{
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.aboutMe-text p{
+    font-size: 20px;
+}
+
+.aboutMe-skills{
+    width: 40%;
+}
+
+.aboutMe-skills h3{
+    font-size: 23px;
+    margin-bottom: 20px
+}
+
+.skills-container{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-container span{
+    background-color: #e8e8e8;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: scale 0.3s ease;
+}
+
+.skills-container span:hover{
+    scale: 1.1;
+}
