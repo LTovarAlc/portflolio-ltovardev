@@ -61,4 +61,39 @@
   scale: 1;
 }
 
+.introduce-gretting{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.Hey{
+  font-size: 70px;
+  font-weight: 700;
+  color: hsl(50, 95%, 64%);
+  margin-left: 40px;
+}
+
+.name{
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.gretting-text{
+  display: flex;
+}
+
+.profilePic{
+  transform: translateX(105%);
+  animation: slideLeft 1s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(105%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
