@@ -6,6 +6,7 @@ import Header from "../components/header/header";
 import Projects from "../components/projects/projects";
 import AboutMe from "../components/aboutMe/aboutMe";
 import Contact from "../components/contact/contact";
+import Footer from "../components/footer/footer";
 
 const Portfolio = () => {
   return (
@@ -15,6 +16,7 @@ const Portfolio = () => {
       <AboutMe/>
       <Projects/>
       <Contact/>
+      <Footer/>
     </section>
   );
 };
