@@ -3,14 +3,14 @@ import "./introduce.css";
 import ProfilePic from "../../assets/profilePic.png";
 import "animate.css";
 
-const Introduce = () => {
+const Introduce = ({darkMode}) => {
   return (
-    <section className="introduce">
+    <section className={`introduce ${darkMode ? 'introduce-dark' : ''}`}>
       <div className="introduce-gretting">
         <img
           src={ProfilePic}
           alt="LtovarDEV profilePicDeveloper DeveloperAnime"
-          className="profilePic"
+          className={`profilePic ${darkMode ? 'profilePic-dark' : ''}`}
         />
         <div className="gretting-text animate__animated animate__fadeInRight animate__delay-1s">
           <span className="Hey">Hey</span>

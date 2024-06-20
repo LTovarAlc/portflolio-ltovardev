@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  transition: background-color 0.3s ease;
 }
 
 .profilePic {
@@ -96,4 +97,16 @@
   to {
     transform: translateX(0);
   }
+}
+
+.introduce-dark{
+  transition: 0.3s ease;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+}
+
+.profilePic-dark {
+  transition: 0.5s ease;
+  height: 300px;
+  border-radius: 50%;
 }

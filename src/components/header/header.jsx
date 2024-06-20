@@ -3,18 +3,7 @@
 import "./header.css";
 import React, { useState } from "react";
 
-const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    if (darkMode === false) {
-      setDarkMode(true);
-      console.log("modo oscuro");
-    } else {
-      setDarkMode(false);
-      console.log("modo claro");
-    }
-  };
+const Header = ({darkMode, toggleDarkMode}) => {
   
   return (
     <header  className={`header ${darkMode ? 'header-dark' : ''}`}>

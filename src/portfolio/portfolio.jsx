@@ -8,15 +8,15 @@ import AboutMe from "../components/aboutMe/aboutMe";
 import Contact from "../components/contact/contact";
 import Footer from "../components/footer/footer";
 
-const Portfolio = () => {
+const Portfolio = ({darkMode, toggleDarkMode}) => {
   return (
     <section className="portfolio">
-      <Header />
-      <Introduce />
-      <AboutMe/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Introduce darkMode={darkMode}/>
+      <AboutMe darkMode={darkMode}/>
+      <Projects darkMode={darkMode}/>
+      <Contact darkMode={darkMode}/>
+      <Footer darkMode={darkMode}/>
     </section>
   );
 };
