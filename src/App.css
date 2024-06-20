@@ -26,6 +26,7 @@ body{
 .body-dark{
   transition: 0.3s ease;
   background-color: #333;
+  color: #fff;
 }
 
 html{

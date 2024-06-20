@@ -17,7 +17,7 @@ const Header = ({darkMode, toggleDarkMode}) => {
         <a href="#skills">
           <li className="menu-list__item-link">Skills</li>
         </a>
-        <a href="">
+        <a href="#contact">
           <li className="menu-list__item-link">Contact</li>
         </a>
         <label className="switch">
