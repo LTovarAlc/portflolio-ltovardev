@@ -1,18 +1,22 @@
 import './App.css'
 import Portfolio from './portfolio/portfolio';
-import Reac, {useState} from 'react';
+import Reac, {useState, useEffect} from 'react';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
+
+  useEffect(() => {
     if (darkMode === false) {
-      setDarkMode(true);
-      console.log("modo oscuro");
+      document.body.classList.remove('body-dark');
     } else {
-      setDarkMode(false);
-      console.log("modo claro");
+      document.body.classList.add('body-dark');
     }
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(prevDarkMode => !prevDarkMode);
+    console.log(darkMode ? "modo claro" : "modo oscuro");
   };
 
   return (
