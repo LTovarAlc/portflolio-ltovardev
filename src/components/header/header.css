@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .header-list{
@@ -87,11 +88,11 @@
 input:checked + .slider:before {
  transform: translateX(30px);
  /*translateX(w-h)*/
- background-color: #777;
+ background-color: #dbdbdb;
 }
 
 input:checked + .slider {
- box-shadow: 0 0 0 2px #777, 0 0 8px #777;
+ box-shadow: 0 0 0 2px #dbdbdb, 0 0 8px #dbdbdb;
 }
 
 .switch200 .slider:before {
@@ -106,4 +107,14 @@ input:checked + .slider {
 
 .switch200 input:checked + .slider {
  box-shadow: 0 0 0 2px red, 0 0 8px red;
+}
+
+.header-dark{
+    transition: 0.3s ease;
+    background-color: #333;
+    color: #fff;
+}
+
+.header-list__dark a{
+    color: #fff;
 }
