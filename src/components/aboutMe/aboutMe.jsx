@@ -2,9 +2,9 @@
 
 import "./aboutMe.css";
 
-const AboutMe = () => {
+const AboutMe = ({darkMode}) => {
   return (
-    <section className="aboutMe section" id="aboutMe">
+    <section className={`aboutMe section ${darkMode ? 'aboutMe-dark' : ''}`} id="aboutMe">
       <h2 className="section-title">About me</h2>
       <div className="aboutMe-content">
         <div className="aboutMe-text">
@@ -19,7 +19,7 @@ const AboutMe = () => {
         </div>
         <div className="aboutMe-skills" id="skills">
             <h3>My Skills</h3>
-            <div className="skills-container">
+            <div className={`skills-container ${darkMode ? 'skills-container-dark' : ''}`}>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>

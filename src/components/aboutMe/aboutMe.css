@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .aboutMe-content{
@@ -50,4 +51,16 @@
 
 .skills-container span:hover{
     scale: 1.1;
+}
+
+.aboutMe-dark{
+    transition: 0.3s ease;
+    background-color: #333;
+    color: #fff;
+}
+
+.skills-container-dark span{
+    transition: 0.3s ease;
+    background-color: hsl(50, 95%, 64%);
+    color: #000;
 }
