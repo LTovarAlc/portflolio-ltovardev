@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease;
 }
 
 .aboutMe-content{
@@ -54,8 +53,6 @@
 }
 
 .aboutMe-dark{
-    transition: 0.3s ease;
-    background-color: #333;
     color: #fff;
 }
 
