@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./contact.css";
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,43 +66,43 @@ const Contact = () => {
     <section className="section contact" id="contact">
       <h2 className="section-title">Contact to me</h2>
       <form onSubmit={handleSubmit} className="form">
-        <div className="input-container">
+        <div className={`input-container ${darkMode ? 'input-container__dark' : ''}`}>
           <input
             type="text"
             name="name"
-            className="text-input"
+            className={`text-input ${darkMode ? 'text-input__dark' : ''}`}
             value={formData.name}
             onChange={handleChange}
           />
           <label htmlFor="name">Name</label>
           {errors.name && <span className="error">{errors.name}</span>}
         </div>
-        <div className="input-container">
+        <div className={`input-container ${darkMode ? 'input-container__dark' : ''}`}>
           <input
             type="email"
             name="email"
-            className="text-input"
+            className={`text-input ${darkMode ? 'text-input__dark' : ''}`}
             value={formData.email}
             onChange={handleChange}
           />
           <label htmlFor="email">Email</label>
           {errors.email && <span className="error">{errors.email}</span>}
         </div>
-        <div className="input-container">
+        <div className={`input-container ${darkMode ? 'input-container__dark' : ''}`}>
           <input
             type="text"
             name="subject"
-            className="text-input"
+            className={`text-input ${darkMode ? 'text-input__dark' : ''}`}
             value={formData.subject}
             onChange={handleChange}
           />
           <label htmlFor="subject">Subject</label>
           {errors.subject && <span className="error">{errors.subject}</span>}
         </div>
-        <div className="input-container">
+        <div className={`input-container ${darkMode ? 'input-container__dark' : ''}`}>
           <textarea
             name="message"
-            className="text-input"
+            className={`text-input ${darkMode ? 'text-input__dark' : ''}`}
             rows={5}
             value={formData.message}
             onChange={handleChange}

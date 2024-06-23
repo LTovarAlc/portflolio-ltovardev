@@ -29,7 +29,7 @@
   color: black;
   position: relative;
   top: 2px;
-  border: solid white;
+  /* border: solid white; */
   border-top: none;
   border-right: none;
   border-left: none;
@@ -38,6 +38,22 @@
   margin: 0px 0px 0px 12px;
   padding: 0px 4px 0px 4px;
   font-size: 20px;
+}
+
+.input-container__dark label{
+  color: #fff;
+  position: relative;
+  top: 2px;
+  /* border: solid hsl(50, 95%, 64%); */
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: fit-content;
+  transition: transform 0.2s;
+  margin: 0px 0px 0px 12px;
+  padding: 0px 4px 0px 4px;
+  font-size: 20px;
+  margin-bottom: 2px;
 }
 
 .input-container input:focus + label {
@@ -70,4 +86,9 @@
 
 .input-container textarea:focus {
   outline: none;
+}
+
+.text-input__dark{
+  background-color: transparent;
+  color: #fff;
 }
