@@ -54,6 +54,10 @@
     height: 40px;
 }
 
+.social-icon:hover{
+    transform: scale(1.05);
+}
+
 .footerDown{
     border-top: 2px solid hsl(50, 95%, 64%);
     width: 90%;
@@ -61,4 +65,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social-icon__dark{
+    filter: invert(100%);
 }
