@@ -21,7 +21,7 @@ const Header = ({darkMode, toggleDarkMode}) => {
           <li className="menu-list__item-link">Contact</li>
         </a>
         <label className="switch">
-          <input type="checkbox" onClick={toggleDarkMode} />
+          <input type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
           <span className="slider"></span>
         </label>
       </ul>
