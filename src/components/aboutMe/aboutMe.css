@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .aboutMe-content{
@@ -60,4 +61,32 @@
     transition: 0.3s ease;
     background-color: hsl(50, 95%, 64%);
     color: #000;
+}
+
+@media screen and (max-width: 1024px){
+    .section-title{
+        font-size: 70px
+    }
+    .aboutMe-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .aboutMe-text{
+        width: 80%;
+    }
+    .aboutMe h3{
+        font-size: 40px;
+    }
+    .aboutMe p{ 
+        font-size: 30px;
+    }
+    .aboutMe-skills{
+        width: 80%;
+    }
+    .skills-container span{
+        font-size: 30px;
+    }
 }

@@ -1,125 +1,137 @@
-.header{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    transition: background-color 0.3s ease;
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease;
 }
 
-.header-list{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    width: 50%;
+.header-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 50%;
 }
 
-.header-list a{
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
+.header-list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .menu-list__item-link {
-    font-size: 20px;
-    font-weight: 500;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    padding: 5px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 5px 0px;
 }
 
 .menu-list__item-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 3px;
-    background-color: hsl(50, 95%, 64%);
-    transition: width 0.5s ease; /* Solo anima la propiedad width */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: hsl(50, 95%, 64%);
+  transition: width 0.5s ease; /* Solo anima la propiedad width */
 }
 
 .menu-list__item-link:hover::after {
-    width: 100%;
-    left: 50%; /* Mantén el inicio del subrayado en el centro */
+  width: 100%;
+  left: 50%; /* Mantén el inicio del subrayado en el centro */
 }
 
 .switch input {
- display: none;
+  display: none;
 }
 
 .switch {
- width: 60px;
- height: 30px;
- position: relative;
+  width: 60px;
+  height: 30px;
+  position: relative;
 }
 
 .slider {
- position: absolute;
- top: 0;
- bottom: 0;
- left: 0;
- right: 0;
- border-radius: 30px;
- box-shadow: 0 0 0 2px hsl(50, 95%, 64%), 0 0 4px hsl(50, 95%, 64%);
- cursor: pointer;
- border: 4px solid transparent;
- overflow: hidden;
- transition: 0.2s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px hsl(50, 95%, 64%), 0 0 4px hsl(50, 95%, 64%);
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
 }
 
 .slider:before {
- position: absolute;
- content: "";
- width: 100%;
- height: 100%;
- background-color: hsl(50, 95%, 64%);
- border-radius: 30px;
- transform: translateX(-30px);
- /*translateX(-(w-h))*/
- transition: 0.2s;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: hsl(50, 95%, 64%);
+  border-radius: 30px;
+  transform: translateX(-30px);
+  /*translateX(-(w-h))*/
+  transition: 0.2s;
 }
 
 input:checked + .slider:before {
- transform: translateX(30px);
- /*translateX(w-h)*/
- background-color: #dbdbdb;
+  transform: translateX(30px);
+  /*translateX(w-h)*/
+  background-color: #dbdbdb;
 }
 
 input:checked + .slider {
- box-shadow: 0 0 0 2px #dbdbdb, 0 0 8px #dbdbdb;
+  box-shadow: 0 0 0 2px #dbdbdb, 0 0 8px #dbdbdb;
 }
 
 .switch200 .slider:before {
- width: 200%;
- transform: translateX(-82px);
- /*translateX(-(w-h))*/
+  width: 200%;
+  transform: translateX(-82px);
+  /*translateX(-(w-h))*/
 }
 
 .switch200 input:checked + .slider:before {
- background-color: red;
+  background-color: red;
 }
 
 .switch200 input:checked + .slider {
- box-shadow: 0 0 0 2px red, 0 0 8px red;
+  box-shadow: 0 0 0 2px red, 0 0 8px red;
 }
 
-.header-dark{
-    transition: 0.3s ease;
-    background-color: #333;
-    color: #fff;
+.header-dark {
+  transition: 0.3s ease;
+  background-color: #333;
+  color: #fff;
 }
 
-.header-list__dark a{
-    color: #fff;
+.header-list__dark a {
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 15vh;
+  }
+  .header-list{
+    width: 70%;
+  }
+  .menu-list__item-link{
+    font-size: 30px;
+  }
 }

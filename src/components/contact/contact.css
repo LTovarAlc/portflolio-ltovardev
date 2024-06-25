@@ -92,3 +92,61 @@
   background-color: transparent;
   color: #fff;
 }
+
+.button-submit{
+  cursor: pointer;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: hsl(50, 95%, 64%);
+  border: 2px solid hsl(50, 95%, 64%);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button-submit::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: hsl(50, 95%, 64%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button-submit:hover::before {
+  scale: 3;
+}
+
+.button-submit:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button-submit:active {
+  scale: 1;
+}
+
+@media screen and (max-width: 1024px){
+  .form{
+    width: 90%;
+  }
+  .input-container input{
+    height: 100px;
+    font-size: 35px;
+  }
+  .input-container label{
+    font-size: 40px;
+  }
+  .button-submit{
+    font-size: 20px;
+  }
+}

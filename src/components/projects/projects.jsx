@@ -22,8 +22,7 @@ const Projects = () => {
               TapJoy is a platform developed by me, in which I seek to
               strengthen my skills as a web application developer. Currently, it
               only features a mini-game where the user must complete sentences
-              until they achieve 5 of them. (It is in a beta state, and there
-              are plans to implement more functionalities.)
+              until they achieve 5 of them.
             </p>
             <div className="projects-links">
               <a

@@ -107,3 +107,30 @@
   height: 300px;
   border-radius: 50%;
 }
+
+@media screen and (max-width: 1024px) {
+  .introduce{
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .button{
+    display: none;
+  }
+  .introduce-gretting{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+  }
+  .profilePic{
+    height: 400px;
+    animation: none;
+    transform: none;
+  }
+  .Hey, .name{
+    font-size: 80px;
+  }
+  .introduce-title{
+    font-size: 80px;
+  }
+}

@@ -70,3 +70,34 @@
 .social-icon__dark{
     filter: invert(100%);
 }
+
+@media screen and (max-width: 1024px){
+    .principals-footer{
+        width: 80%;
+    }
+    .principals-footer h3{
+        font-size: 50px;
+    }
+    .principals-footer p{
+        font-size: 25px;
+        width: 100%;
+    }
+    .socials-footer h3{
+        font-size: 50px;
+    }
+    .footerUp{
+        flex-direction: column;
+    }
+    .socials-footer{
+        width: 80%;
+    }
+    .social-icon{
+        height: 70px;
+    }
+    .footerDown{
+        border-top: 5px solid hsl(50, 95%, 64%);
+    }
+    .footerDown p, span{
+        font-size: 30px
+    }
+}

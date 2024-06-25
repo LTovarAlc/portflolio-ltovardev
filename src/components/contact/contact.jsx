@@ -106,7 +106,7 @@ const Contact = ({ darkMode }) => {
           <label htmlFor="message">Message</label>
           {errors.message && <span className="error">{errors.message}</span>}
         </div>
-        <button className="button" type="submit">Submit</button>
+        <button className="button-submit" type="submit">Submit</button>
       </form>
     </section>
   );
