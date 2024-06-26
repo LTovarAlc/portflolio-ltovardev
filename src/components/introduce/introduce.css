@@ -134,3 +134,56 @@
     font-size: 80px;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 820px){
+  .introduce{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+  .button{
+    display: none;
+  }
+  .introduce-gretting{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+  }
+  .profilePic{
+    height: 350px;
+    animation: none;
+    transform: none;
+  }
+  .Hey, .name{
+    font-size: 70px;
+  }
+  .introduce-title{
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 820px){
+  .introduce{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+  .button{
+    display: none;
+  }
+  .introduce-gretting{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+  }
+  .profilePic{
+    height: 300px;
+    animation: none;
+    transform: none;
+  }
+  .Hey, .name{
+    font-size: 50px;
+  }
+  .introduce-title{
+    font-size: 50px;
+  }
+}

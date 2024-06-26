@@ -126,10 +126,10 @@ input:checked + .slider {
 
 @media screen and (max-width: 1024px) {
   .header {
-    height: 15vh;
+    height: 10vh;
   }
   .header-list{
-    width: 70%;
+    width: 100%;
   }
   .menu-list__item-link{
     font-size: 30px;
