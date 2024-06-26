@@ -42,8 +42,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="projects-container">
         <div className="project-container">
           <img
             src={SpeedFest}
@@ -76,8 +74,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="projects-container">
         <div className="project-container">
           <img
             src={TacosElMezquital}
@@ -111,6 +107,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
+        
+
     </section>
   );
 };

@@ -187,3 +187,72 @@
     font-size: 50px;
   }
 }
+
+@media screen and (max-width: 430px){
+  .introduce{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+    display: none;
+  }
+  .introduce-gretting{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+
+  }
+  .profilePic{
+    height: 200px;
+    animation: none;
+    transform: none;
+  }
+  .gretting-text{
+    display: flex;
+    justify-content: sp;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .Hey, .name{
+    font-size: 35px;
+    margin-left: 0;
+  }
+  .introduce-title{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .introduce{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+    display: none;
+  }
+  .introduce-gretting{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+
+  }
+  .profilePic{
+    height: 200px;
+    animation: none;
+    transform: none;
+  }
+  .Hey, .name{
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .introduce-title{
+    font-size: 30px;
+  }
+}

@@ -135,3 +135,9 @@ input:checked + .slider {
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .header{
+    display: none;
+  }
+}
